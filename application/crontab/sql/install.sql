@@ -29,7 +29,7 @@ CREATE TABLE `dp_crontab` (
 -- 表数据 `dp_crontab`
 -- -----------------------------
 INSERT INTO `dp_crontab` VALUES ('1', 'url', '自动开奖', '/tgbot/lottery', '* * * * *', '0', '0', '81', '1558785742', '1558791061', '1558713600', '1735660800', '1558791061', '0', 'normal');
-INSERT INTO `dp_crontab` VALUES ('2', 'sql', '定期清理会话', 'DELETE FROM `dp_tgbot_conversation` WHERE `status` <1', '0 4 * * 1', '0', '0', '0', '1558785788', '1558785788', '1558713600', '1735660800', '', '0', 'normal');
+INSERT INTO `dp_crontab` VALUES ('2', 'sql', '定期清理会话', 'DELETE FROM `dp_tgbot_conversation` WHERE `status` <1', '0 4 * * 1', '0', '0', '0', '1558785788', '1558785788', '1558713600', '1735660800', NULL, '0', 'normal');
 
 -- -----------------------------
 -- 表结构 `dp_crontab_log`
