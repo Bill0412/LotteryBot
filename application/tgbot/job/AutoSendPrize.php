@@ -60,7 +60,7 @@ class AutoSendPrize
                         'chat_id' => $prize->lottery->chat_id,
                         'text' =>
                             '<b>好消息</b>' . PHP_EOL . PHP_EOL .
-                            "由于 @<a href=\"tg://user?id={$data['user_id']}\">{$data['first_name']} {$data['last_name']}</a> 开奖期间退群，奖品无法发送达，现已自动退回到 <a href=\"tg://user?id={$prize->lottery->user_id}\">活动发起人</a> 手中。",
+                            "由于 <a href=\"tg://user?id={$data['user_id']}\">@{$data['first_name']} {$data['last_name']}</a> 开奖期间退群，奖品无法发送达，现已自动退回到 <a href=\"tg://user?id={$prize->lottery->user_id}\">活动发起人</a> 手中。",
                         'disable_web_page_preview' => true,
                         'parse_mode' => 'html',
                     ];
